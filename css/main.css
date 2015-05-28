@@ -41,7 +41,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-shadow: 0 1px rgba(0,0,0,0.3);
 }
 .main-nav {
-	height:50px;
 	padding:1px;
 	text-align: center;
 	background-color: #333;
@@ -111,7 +110,7 @@ header h2:after{
 }
 .education-experience__list li{
 	margin-top:50px;
-	height:180px;
+	padding-bottom: 20px;
 	list-style: none;
 }
 .education-experience__list li img{
@@ -184,4 +183,51 @@ header h2:after{
 	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 	color: #fff;
 	box-shadow: 0 3px 0 #daae1d;
+}
+@media (max-width: 960px){
+	.container {
+		width: 100%;
+	}
+	.main-header h1{
+		font-size: 32px;
+	}
+	.main-nav ul li{
+		display: block;
+	}
+	.info-section{
+		padding: 10px;
+	}
+	.info-section header h2 span{
+		display: block;
+	}
+	li.whatido__skill {
+		width:100%;
+		margin-bottom: 40px;
+	}
+	.education-experience__list li img{
+		width:180px;
+		display:block;
+		float:none;
+		margin:0 auto;
+	}
+	.education-experience__list h3 {
+		overflow: hidden;
+		width:100%;
+	}
+	.education-experience__list p{
+		width:100%;
+	}
+	.photos__list li{
+		width:100%;
+	}
+	.get-in-touch__list li{
+		width: 50%;
+	}
+	.contact form {
+		width: 100%;
+	}
+	.box label {
+		position:static;
+		text-align:left;
+	}
 }
